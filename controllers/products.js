@@ -1,3 +1,10 @@
+
 const getAllProducts=async (req,res)=>{
-    res.send(200).json({message:"got all products"})
+    res.status(200).json({msg:"got all products"})
 }
+
+const getAllProductsTesting=async (req,res)=>{
+    res.status(200).json({msg:"got all products testing"})
+}
+
+module.exports={getAllProducts,getAllProductsTesting}
